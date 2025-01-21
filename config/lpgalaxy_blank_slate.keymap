@@ -77,10 +77,10 @@
  &kp LSHFT  &kp Z      &kp X      &kp C       &kp V          &kp B          &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH      &kp RET
 #else
  &kp ESC    &kp Q      &kp W      &kp F       &kp P          &kp B          &kp J            &kp L          &kp U       &kp Y      &kp QUOT      &kp BKSP
- &kp TAB    &kp A      &kp S      &kp R       &kp T          &kp G          &kp M            &kp N          &kp E       &kp I      &kp O         &kp QUOT
- &kp LSHFT  &kp Z      &kp X      &kp C       &kp D          &kp V          &kp K            &kp H          &kp COMMA   &kp DOT    &kp UP      &kp RET
+ &kp TAB    &kp A      &kp S      &kp R       &kp T          &kp G          &kp M            &kp N          &kp E       &kp I      &kp O         &kp RET
+ &kp LSHFT  &kp Z      &kp X      &kp C       &kp D          &kp V          &kp K            &kp H          &kp COMMA   &kp DOT    &kp UP      &kp SLASH
 #endif
- &kp LCTRL  &mo LALT   &kp LGUI  &kp SYM_L    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp LEFT    &kp LEFT     &kp DOWN      &kp RIGHT
+ &kp LCTRL  &mo LALT   &kp LGUI  &kp SYM_L    &mo NAV_L          &kp SPACE                   &mo BKSP      &kp LG(LC(LA(LSHIFT))):    &kp LEFT     &kp DOWN      &kp RIGHT
             >;
         };
 
@@ -120,7 +120,7 @@
             label = "Sym";
             bindings = <
 &trans     &kp LBRC   &kp AMPS   &kp STAR    &kp LPAR     &kp RBRC     &trans     &trans    &trans       &trans       &trans     &bootloader
-&trans     &kp COLON  &kp DLLR   &kp PRCNT   &kp CARET    &kp PLUS     &trans     &trans    &trans       &trans       &trans     &trans
+&trans     &kp COLON  &kp DLLR   &kp PRCNT   &kp CARET    &kp PLUS     &trans     &trans    &trans       &trans       &trans     &studio_unlock
 &trans     &kp TILDE  &kp EXCL   &kp AT      &kp HASH     &kp PIPE     &trans     &trans    &trans       &trans       &trans     &trans
 #ifdef TBLE_DUAL_2U
 &trans &trans        &trans     &kp RPAR                &trans                    &trans       &trans         &trans &trans &trans
