@@ -81,7 +81,7 @@
  &kp TAB     &kp A      &kp S      &kp R       &kp T        &kp G             &kp M            &kp N          &kp E       &kp I      &kp O         &kp RET
  &kp LSHFT   &kp Z      &kp X      &kp C       &kp D        &kp V             &kp K            &kp H          &kp COMMA   &kp DOT    &kp UP      &kp SLASH
 
- &kp A       &kb A      &mo SYM_L  &KB LCTRL   &kp LGUI     &kp SPACE         &kp LG(LC(LA(LSHIFT))) &mo NAV)       &kp LEFT     &kp DOWN      &kp RIGHT
+ &kp A       &kb A      &mo SYM_L  &KB LCTRL   &kp LGUI     &kp SPACE         &kp LG(LC(LA(LSHIFT)))     &mo NAV       &kp LEFT     &kp DOWN      &kp RIGHT
 
             >;
         };
@@ -89,10 +89,11 @@
         nav_layer {
             label = "Nav";
             bindings = <
+
 &bt BT_CLR &trans     &trans     &trans      &trans          &trans       &trans     &trans         &trans      &trans     &trans     &kp DEL
 &trans     &trans     &trans     &trans      &trans          &trans       &trans     &kp LEFT       &kp DOWN    &kp UP     &kp RIGHT  &trans
 &trans     &bt BT(0)  &bt BT(1)  &bt BT(2)   &bt BT(3)       &bt BT(4)    &trans     &kp HOME       &kp PG_DN   &kp PG_UP  &kp END    &trans
-&trans  &trans        &trans     &trans              &trans                    &trans       &trans         &trans &trans &trans
+&trans     &trans     &trans     &trans      &trans          &trans       &trans     &trans         &trans      &trans
 
             >;
         };
@@ -106,8 +107,8 @@
         num_layer {
             label = "Num";
             bindings = <
-&trans  &kp N1    &kp N2   &kp N3   &kp N4   &kp N5   &kp N6   &kp N7   &kp N8 &kp N9 &kp N0  &trans  
-&trans  &kp N1    &kp N2   &kp N3   &kp N4   &kp N5   &kp N6   &kp N7   &kp N8 &kp N9 &kp N0  &trans  
+&trans  &kp N1    &kp N2    &kp N3    &kp N4    &kp N5   &kp N6   &kp N7   &kp N8 &kp N9 &kp N0  &trans  
+&trans  &trans    &kp LBKT  &kp LBRC  &kp LPAR  &kp DQT   &kp SQT   &kp RPAR   &kp RBRC  &kp RBKT &kp PLUS &kp EQUAL  
 &trans  &kp LSFT(N1) &kp LSFT(N2) &kp LSFT(N3) &kp LSFT(N4) &kp LSFT(N5) &kp LSFT(N6) &kp LSFT(N7) &kp LSFT(N8) &kp LSFT(N9) &kp LSFT(N0) &trans
 &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       
             >;
