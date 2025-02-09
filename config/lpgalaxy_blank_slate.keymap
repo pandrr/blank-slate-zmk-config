@@ -85,7 +85,7 @@
  &kp TAB     &kp A      &kp S      &kp R       &kp T        &kp G             &kp M            &kp N          &kp E       &kp I      &kp O       &kp RET
  &kp LSHFT   &kp Z      &kp X      &kp C       &kp D        &kp V             &kp K            &kp H          &kp COMMA   &kp DOT    &kp UP      &kp SLASH
 
- &kp A       &kb A      &mo SYM_L  &KB LCTRL   &kp LGUI             &kp SPACE                  &kp LG(LC(LA(LSHIFT))) &mo NAV &kp LEFT     &kp DOWN      &kp RIGHT
+ &kp A       &kb A      &mo SYM_L  &KB LCTRL   &kp LGUI             &kp SPACE                  &kp LG(LC(LA(LSHIFT))) &mo NAV_L  &kp LEFT     &kp DOWN      &kp RIGHT
 
             >;
         };
