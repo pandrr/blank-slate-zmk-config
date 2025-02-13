@@ -32,7 +32,7 @@
 #elif defined(TBLE_MIT)
                        &layout_ortho_4x12_1x2u;
 #else
-                       &layout_ortho_4x12_all1u;e
+                       &layout_ortho_4x12_all1u;
 #endif
     };
 
