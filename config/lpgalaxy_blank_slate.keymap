@@ -36,18 +36,19 @@
 #endif
     };
 
-    macros {
+
       ZMK_MACRO(vimCmd,
 		wait-ms = <1>;
 		tap-ms = <5>;
                 bindings = <&kp ESC &kp COLON>;
-		);
+		)
+
       ZMK_MACRO(vimLead,
 		wait-ms = <1>;
 		tap-ms = <5>;
                 bindings = <&kp ESC &kp SPACE>;
-		);
-    };
+		)
+
     
     tap_dances {
     	shifty: shift_caps_word {
