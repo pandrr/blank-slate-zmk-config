@@ -75,7 +75,7 @@
  &mt LALT TAB     &kp A      &kp S      &kp R       &kp T        &kp G             &kp M            &kp N          &kp E       &kp I      &kp O       &kp RET
  &kp LSHFT   &kp Z      &kp X      &kp C       &kp D        &kp V             &kp K            &kp H          &kp COMMA   &kp DOT    &kp UP      &kp SLASH
 
- &trans       &trans    &kp LCTRL  &mo NUM_L   &kp LGUI     &kp SPACE         &kp SPACE        &kp LG(LC(LA(LSHIFT))) &mo NAV_L  &kp LEFT     &kp DOWN      &kp RIGHT
+ &trans       &trans    &kp LCTRL    &kp LGUI  &mo NUM_L    &kp SPACE         &kp SPACE        &mo NAV_L  &kp LG(LC(LA(LSHIFT)))  &kp LEFT     &kp DOWN      &kp RIGHT
 
             >;
         };
