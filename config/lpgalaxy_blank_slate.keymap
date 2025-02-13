@@ -32,7 +32,7 @@
 #elif defined(TBLE_MIT)
                        &layout_ortho_4x12_1x2u;
 #else
-                       &layout_ortho_4x12_all1u;
+                       &layout_ortho_4x12_all1u;e
 #endif
     };
 
@@ -72,10 +72,10 @@
 ///////////////////////////////////////////////////////
 
  &kp ESC     &kp Q      &kp W      &kp F       &kp P        &kp B             &kp J            &kp L          &kp U       &kp Y      &kp SEMI    &kp BKSP
- &mt LALT TAB     &kp A      &kp S      &kp R       &kp T        &kp G             &kp M            &kp N          &kp E       &kp I      &kp O       &kp RET
+ &kp TAB     &kp A      &kp S      &kp R       &kp T        &kp G             &kp M            &kp N          &kp E       &kp I      &kp O       &kp RET
  &kp LSHFT   &kp Z      &kp X      &kp C       &kp D        &kp V             &kp K            &kp H          &kp COMMA   &kp DOT    &kp UP      &kp SLASH
 
- &trans       &trans    &kp LCTRL    &kp LGUI  &mo NUM_L    &kp SPACE         &kp SPACE        &lt NAV_L RET  &kp LG(LC(LA(LSHIFT)))  &kp LEFT     &kp DOWN      &kp RIGHT
+ &trans      &kp LALT   &kp LCTRL    &kp LGUI  &mo NUM_L    &kp SPACE         &kp SPACE        &lt NAV_L RET  &kp LG(LC(LA(LSHIFT)))  &kp LEFT     &kp DOWN      &kp RIGHT
 
             >;
         };
