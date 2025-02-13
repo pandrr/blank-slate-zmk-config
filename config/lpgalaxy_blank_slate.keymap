@@ -37,10 +37,15 @@
     };
 
     macros {
-      ZMK_MACRO(thumbs_up,
+      ZMK_MACRO(vimCmd,
 		wait-ms = <1>;
 		tap-ms = <5>;
-                bindings = <&kp PLUS &kp COLON &kp PLUS &kp N1 &kp COLON &kp RET>;
+                bindings = <&kp ESC &kp COLON>;
+		),
+      ZMK_MACRO(vimLead,
+		wait-ms = <1>;
+		tap-ms = <5>;
+                bindings = <&kp ESC &kp SPACE>;
 		)
     };
     
@@ -62,20 +67,19 @@
             label = "Base";
             bindings = <
 
-///////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
 //
-//  ESC  Q   W   F   P   B       J   L   U   Y   :   BSP
-//  TAB  A   S   R   T   G       M   N   E   I   O   ENT
-//  SHFT Z   X   C   V   K       K   H   ,   .   UP  /
-//  -    -   NUM CTL GUI   SPACE     HYP NAV LFT DN  RGHT
+//  ESC    Q   W   F   P   B      J   L   U   Y   :    BSP
+//  TAB    A   S   R   T   G      M   N   E   I   O    ENT
+//  SHFT   Z   X   C   V   K      K   H   ,   .   UP   /
+//  -     ALT CTL GUI BSP GUI   SPCE HYP NAV LFT DOWN  RGHT
 //
-///////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
 
- &kp ESC     &kp Q      &kp W      &kp F       &kp P        &kp B             &kp J            &kp L          &kp U       &kp Y      &kp SEMI    &kp BKSP
- &kp TAB     &kp A      &kp S      &kp R       &kp T        &kp G             &kp M            &kp N          &kp E       &kp I      &kp O       &kp RET
- &kp LSHFT   &kp Z      &kp X      &kp C       &kp D        &kp V             &kp K            &kp H          &kp COMMA   &kp DOT    &kp UP      &kp SLASH
-
- &trans      &kp LALT   &kp LCTRL    &kp LGUI  &mo NUM_L    &kp SPACE         &kp SPACE        &lt NAV_L RET  &kp LG(LC(LA(LSHIFT)))  &kp LEFT     &kp DOWN      &kp RIGHT
+ &kp ESC     &kp Q      &kp W      &kp F       &kp P        &kp B        &kp J        &kp L          &kp U       &kp Y      &kp SEMI    &kp BKSP
+ &kp TAB     &kp A      &kp S      &kp R       &kp T        &kp G        &kp M        &kp N          &kp E       &kp I      &kp O       &kp RET
+ &kp LSHFT   &kp Z      &kp X      &kp C       &kp D        &kp V        &kp K        &kp H          &kp COMMA   &kp DOT    &kp UP      &kp SLASH
+ &trans      &kp LALT   &kp LCTRL    &kp LGUI  &mo NUM_L    &kp BKSP     &kp SPACE    &lt NAV_L RET  &kp LG(LC(LA(LSHIFT)))  &kp LEFT     &kp DOWN      &kp RIGHT
 
             >;
         };
@@ -92,22 +96,22 @@
             >;
         };
 ///////////////////////////////////////////////////////
+// 
+//  &&  1   2   3   4   5     6   7   8   9    0    &&
+//  &&  &&  [   {   (   "     '   )   }   ]    -    =
+//  &&  !   @   #   $   %     ^   &   *   +    UP    
+//  -   -   NUM CTL GUI   SPACE   HYP NAV LFT  DWN  RGHT
 //
-//  &&  1   2   3   4   5     6   7   8   9   0   &&
-//  &&  &&  [   {   (   "     '   )   }   ]   +   =
-//  &&  !   @   #   $   %     ^   &   *   &&  -   &&
-//  -   -   NUM CTL GUI   SPACE   HYP NAV LFT DN  RGHT
-//
-///////////////////////////////////////////////////////
+/////////////////////////////////////////////////////// 
 
 
         num_layer {
             label = "Num";
             bindings = <
-&trans  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans  
-&trans  &trans     &kp LBKT   &kp LBRC   &kp LPAR   &kp DQT    &kp SQT    &kp RPAR   &kp RBRC   &kp RBKT   &kp SPACE  &kp EQUAL  
-&trans  &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5) &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp PLUS   &kp LS(MINUS)
-&trans  &trans     &trans     &trans     &trans     &trans     &trans     &mo SYM_L  &trans     &trans     &kp MINUS  &trans
+&vimCmd   &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans  
+&vimLead  &trans     &kp LBKT   &kp LBRC   &kp LPAR   &kp DQT    &kp SQT    &kp RPAR   &kp RBRC   &kp RBKT   &kp SPACE  &kp EQUAL  
+&trans    &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5) &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp PLUS   &kp LS(MINUS)
+&trans    &trans     &trans     &trans     &trans     &trans     &trans     &mo SYM_L  &trans     &trans     &kp MINUS  &trans
             >;
         };
 
