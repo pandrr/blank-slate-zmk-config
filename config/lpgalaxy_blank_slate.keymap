@@ -15,7 +15,7 @@
 #define TBLE_MIT     1
 //#define TBLE_DUAL_2U 1
 
-#define NAV_L 1
+#define BT_L 1
 #define NUM_L 2
 #define SYM_L 3
 
@@ -85,20 +85,20 @@
  &kp TAB     &kp A      &kp S      &kp R       &kp T        &kp G        &kp M        &kp N          &kp E       &kp I      &kp O       &kp RET
  &kp LSHFT   &kp Z      &kp X      &kp C       &kp D        &kp V        &kp K        &kp H          &kp COMMA   &kp DOT    &kp UP      &kp SLASH
 
- &trans      &kp LALT   &kp LCTRL    &kp LGUI  &mo NUM_L    &kp SPACE    &lt NAV_L RET  &kp LG(LC(LA(LSHIFT)))  &kp LEFT     &kp DOWN      &kp RIGHT
+ &trans      &kp LALT   &kp LCTRL    &kp LGUI  &mo NUM_L    &kp SPACE    &lt NUM_L RET  &kp LG(LC(LA(LSHIFT)))  &kp LEFT     &kp DOWN      &kp RIGHT
 
 
             >;
         };
 
-        nav_layer {
-            label = "Nav";
+        bt_layer {
+            label = "bt";
             bindings = <
 
-&bt BT_CLR &trans     &trans     &trans      &trans          &mo SYM_L    &trans     &trans      &trans      &trans       &trans     &kp DEL
-&trans     &trans     &trans     &trans      &trans          &trans       &trans     &kp LEFT    &kp DOWN    &kp UP       &kp RIGHT  &trans
-&trans     &bt BT(0)  &bt BT(1)  &bt BT(2)   &bt BT(3)       &bt BT(4)    &trans     &kp HOME    &kp PG_DN   &kp PG_UP    &kp END    &trans
-&trans     &trans     &trans     &trans      &trans          &trans       &trans     &trans      &trans      &kp LS(LC(TAB)) &trans  &kp LC(TAB) 
+&trans     &bt BT(0)  &bt BT(1)  &bt BT(2)   &bt BT(3)       &bt BT(4)    &trans     &trans      &trans      &trans      &trans       &trans     &bt BT_CLR
+&trans     &trans     &trans     &trans      &trans          &trans       &trans     &kp LEFT    &kp DOWN    &kp UP         &kp RIGHT  &trans
+&trans     &trans     &trans     &trans      &trans          &trans       &kp HOME   &kp PG_DN   &kp PG_UP   &kp END        &trans
+&trans     &trans     &trans     &trans      &trans          &trans       &trans     &trans      &trans      &trans       &trans  
 
             >;
         };
@@ -117,7 +117,7 @@
 &vimCmd   &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans  
 &vimLead  &kp PLUS   &kp LBKT   &kp LBRC   &kp LPAR   &kp DQT    &kp SQT    &kp RPAR   &kp RBRC   &kp RBKT   &kp MINUS  &trans  
 &trans    &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5) &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp EQUAL  &trans     &trans
-&trans    &trans     &trans     &trans     &trans     &trans     &trans     &mo SYM_L  &trans     &trans     &trans     &trans
+&trans    &trans     &trans     &trans     &trans     &trans     &mo BT_L   &trans     &trans     &trans     &trans
             >;
         };
 
