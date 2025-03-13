@@ -90,7 +90,7 @@ https://github.com/pandrr/blank-slate-zmk-config
  &kp TAB     &kp A      &kp S      &kp R       &kp T        &kp G        &kp M        &kp N          &kp E       &kp I      &kp O       &kp RET
  &kp LSHFT   &kp Z      &kp X      &kp C       &kp D        &kp V        &kp K        &kp H          &kp COMMA   &kp DOT    &kp UP      &kp SLASH
 
- &trans      &kp LALT   &kp LCTRL    &kp LGUI  &mo NUM_L    &kp SPACE    &lt NUM_L RET  &kp LG(LC(LA(LSHIFT)))  &kp LEFT     &kp DOWN      &kp RIGHT
+ &trans      &kp LALT   &kp LCTRL    &kp LGUI  &mt LSHIFT RET    &kp SPACE    &mo NUM_L   &kp LG(LC(LA(LSHIFT)))  &kp LEFT     &kp DOWN      &kp RIGHT
 
 
             >;
