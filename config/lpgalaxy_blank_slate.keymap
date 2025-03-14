@@ -22,47 +22,35 @@ https://github.com/pandrr/blank-slate-zmk-config
 
 #define BT_L 1
 #define NUM_L 2
-#define SYM_L 3
+#define HYP_L 3
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
 
 #define BT(n) BT_SEL n
+#define HY(k) LG(LC(LA(LSHIFT(k))))  
 
 / {
     chosen {
-       zmk,physical-layout =
-#ifdef TBLE_DUAL_2U
-                       &layout_ortho_4x12_2x2u;
-#elif defined(TBLE_MIT)
-                       &layout_ortho_4x12_1x2u;
-#else
-                       &layout_ortho_4x12_all1u;
-#endif
+        zmk,physical-layout =
+            #ifdef TBLE_DUAL_2U
+               &layout_ortho_4x12_2x2u;
+            #elif defined(TBLE_MIT)
+               &layout_ortho_4x12_1x2u;
+            #else
+               &layout_ortho_4x12_all1u;
+            #endif
     };
-
-
-      ZMK_MACRO(vimCmd,
-		wait-ms = <1>;
-		tap-ms = <5>;
-                bindings = <&kp ESC &kp COLON>;
-		)
-
-      ZMK_MACRO(vimLead,
-		wait-ms = <1>;
-		tap-ms = <5>;
-                bindings = <&kp ESC &kp SPACE>;
-		)
 
     
     tap_dances {
     	shifty: shift_caps_word {
-		compatible = "zmk,behavior-tap-dance";
-		label = "TD_SHIFTY";
-		#binding-cells = <0>;
-		tapping-term-ms = <150>;
-		bindings = <&kp LSHFT>, <&caps_word>;
-	};
+        	compatible = "zmk,behavior-tap-dance";
+        	label = "TD_SHIFTY";
+        	#binding-cells = <0>;
+        	tapping-term-ms = <150>;
+        	bindings = <&kp LSHFT>, <&caps_word>;
+        };
     };
 
 
@@ -90,7 +78,7 @@ https://github.com/pandrr/blank-slate-zmk-config
  &kp TAB     &kp A      &kp S      &kp R       &kp T        &kp G        &kp M        &kp N          &kp E       &kp I      &kp O       &kp RET
  &kp LSHFT   &kp Z      &kp X      &kp C       &kp D        &kp V        &kp K        &kp H          &kp COMMA   &kp DOT    &kp UP      &kp SLASH
 
- &trans      &kp LALT   &kp LCTRL    &kp LGUI  &mt LSHIFT RET    &kp SPACE    &mo NUM_L   &kp LG(LC(LA(LSHIFT)))  &kp LEFT     &kp DOWN      &kp RIGHT
+ &trans      &kp LALT   &kp LCTRL    &kp LGUI  &mt LSHIFT RET    &kp SPACE    &mo NUM_L   &mo HYP_L  &kp LEFT     &kp DOWN      &kp RIGHT
 
 
             >;
@@ -99,19 +87,20 @@ https://github.com/pandrr/blank-slate-zmk-config
         bt_layer {
             label = "bt";
             bindings = <
-
-&trans     &bt BT(0)  &bt BT(1)  &bt BT(2)   &bt BT(3)       &bt BT(4)    &trans     &trans      &trans      &trans      &trans       &trans     &bt BT_CLR
-&trans     &trans     &trans     &trans      &trans          &trans       &trans     &kp LEFT    &kp DOWN    &kp UP         &kp RIGHT  &trans
-&trans     &trans     &trans     &trans      &trans          &trans       &kp HOME   &kp PG_DN   &kp PG_UP   &kp END        &trans
-&trans     &trans     &trans     &trans      &trans          &trans       &trans     &trans      &trans      &trans       &trans  
+&trans  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &bootloader
+&trans  &kp F11    &kp F12    &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   &studio_unlock
+&trans  &bt BT(0)  &bt BT(1)  &bt BT(2)  &bt BT(3)  &bt BT(4)  &trans  &trans  &trans  &trans  &trans   &bt BT_CLR
+&trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   &trans
 
             >;
         };
 ///////////////////////////////////////////////////////
+//
+//      Q   W   F   P   B   J   L   U   Y   :
 // 
 //  ??  1   2   3   4   5   6   7   8   9   0    &&
-//  ??  ~   [   {   (   +   -   )   }   ]        &&
-//  &&  `   "   "   =   _   |   ;   :   
+//  ??  ~   [   {   (   +   -   )   }   ]   ??   &&
+//  ??  ??  `   '   "   =   _   |   ;   :   ??   
 //
 /////////////////////////////////////////////////////// 
 
@@ -121,18 +110,19 @@ https://github.com/pandrr/blank-slate-zmk-config
             bindings = <
 &vimCmd   &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans  
 &vimLead  &kp TILDE  &kp LBKT   &kp LBRC   &kp LPAR   &kp PLUS   &kp MINUS  &kp RPAR   &kp RBRC   &kp RBKT   &trans     &trans  
-&trans    &trans     &kp GRAVE  &kp SQT    &kp DQT    &kp EQUAL  &kp UNDER  &kp PIPE   &kp SEMI   &kp COLON  &trans     &trans
+&trans    &trans     &kp GRAVE  &kp SQT    &kp DQT    &kp EQUAL  &kp UNDER  &kp PIPE   &kp SEMI   &kp COLON  &trans     &kp BSLH
 &trans    &trans     &trans     &trans     &trans     &trans     &mo BT_L   &trans     &trans     &trans     &trans
             >;
         };
 
-        sym_layer {
-            label = "Sym";
+        hyp_layer {
+            label = "hyp";
             bindings = <
-&trans  &kp F1  &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &kp F7     &kp F8     &kp F9     &kp F10     &bootloader
-&trans  &kp F11 &kp F12    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &studio_unlock
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+ &trans   &kp Q      &kp W      HY(F)       &kp P        &kp B        &kp J        &kp L          &kp U       &kp Y      &kp SEMI    &trans
+ &trans   &kp A      &kp S      &kp R       &kp T        &kp G        &kp M        &kp N          &kp E       &kp I      &kp O       &trans
+ &trans   &kp Z      &kp X      &kp C       &kp D        &kp V        &kp K        &kp H          &kp COMMA   &kp DOT    &kp UP      &trans
+
+&trans  &trans  &trans  &trans  HY(SPACE)  &trans  &trans  &trans  &trans  &trans  &trans   &trans
 
             >;
         };
