@@ -116,7 +116,7 @@
             bindings = <
 &trans        &kp HY(Q)      &kp HY(W)      &kp HY(F)       &kp HY(P)        &kp HY(B)        &kp HY(J)        &kp HY(L)          &kp HY(U)       &kp HY(Y)      &trans   &trans
 &kp LG(TILDE) &kp HY(A)      &kp HY(S)      &kp HY(R)       &kp HY(T)        &kp HY(G)        &kp HY(M)        &kp HY(N)          &kp HY(E)       &kp HY(I)      &kp HY(O)       &trans
-&trans        &kp HY(Z)      &kp HY(X)      &kp HY(C)       &kp HY(D)        &kp HY(V)        &kp HY(K)        &kp HY(H)          &trans   &trans &kp HY(UP) &trans
+&trans        &kp HY(Z)      &kp HY(X)      &kp HY(C)       &kp HY(D)        &kp HY(V)        &kp HY(K)        &kp HY(H)          &kp C_VOL_UP &kp C_VOL_DN &kp HY(UP) &trans
 &trans        &trans  &trans  &trans &trans     &kp HY(SPACE)  &trans  &trans  &trans  &trans  &kp HY(LEFT)  &kp HY(DOWN)  &kp HY(RIGHT)
 
             >;
