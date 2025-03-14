@@ -23,7 +23,7 @@ https://github.com/pandrr/blank-slate-zmk-config
 &lt { quick_tap_ms = <200>; };
 
 #define BT(n) BT_SEL n
-#define HY(k) &kp LG(LC(LA(LSHIFT(k))))  
+#define HY(k) LG(LC(LA(LS(k))))  
 
 / {
     chosen {
@@ -113,11 +113,10 @@ https://github.com/pandrr/blank-slate-zmk-config
         hyp_layer {
             label = "hyp";
             bindings = <
- &trans   &kp Q      &kp W      HY(F)       &kp P        &kp B        &kp J        &kp L          &kp U       &kp Y      &kp SEMI    &trans
- &kp LG(TILDE) &kp A      &kp S      &kp R       &kp T        &kp G        &kp M        &kp N          &kp E       &kp I      &kp O       &trans
- &trans   &kp Z      &kp X      &kp C       &kp D        &kp V        &kp K        &kp H          &kp COMMA   &kp DOT    &kp UP      &trans
-
-&trans  &trans  &trans  &trans  HY(SPACE)  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&trans        &kp Q      &kp W      &kp HY(F)       &kp P        &kp B        &kp J        &kp L          &kp U       &kp Y      &kp SEMI    &trans
+&kp LG(TILDE) &kp A      &kp S      &kp R       &kp T        &kp G        &kp M        &kp N          &kp E       &kp I      &kp O       &trans
+&trans        &kp Z      &kp X      &kp C       &kp D        &kp V        &kp K        &kp H          &kp COMMA   &kp DOT    &kp UP      &trans
+&trans        &trans  &trans  &trans  &kp HY(SPACE)  &trans  &trans  &trans  &trans  &trans  &trans   &trans
 
             >;
         };
