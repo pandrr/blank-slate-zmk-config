@@ -2,7 +2,7 @@
  *
  * TOMS KEYMAP
 
-https://github.com/pandrr/blank-slate-zmk-config
+# https://github.com/pandrr/blank-slate-zmk-config
 
  */
 
@@ -18,6 +18,7 @@ https://github.com/pandrr/blank-slate-zmk-config
 #define BT_L 1
 #define NUM_L 2
 #define HYP_L 3
+#define SYM_L 4
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
@@ -71,7 +72,7 @@ https://github.com/pandrr/blank-slate-zmk-config
 
  &kp ESC     &kp Q      &kp W      &kp F       &kp P        &kp B        &kp J        &kp L          &kp U       &kp Y      &kp SEMI    &kp BKSP
  &kp TAB     &kp A      &kp S      &kp R       &kp T        &kp G        &kp M        &kp N          &kp E       &kp I      &kp O       &kp RET
- &kp LSHFT   &kp Z      &kp X      &kp C       &kp D        &kp V        &kp K        &kp H          &kp COMMA   &kp DOT    &kp UP      &kp SLASH
+ &kp LSHFT   &kp Z      &kp X      &kp C       &kp D        &kp V        &kp K        &kp H          &kp COMMA   &kp DOT    &kp UP      &lt SYM_L SLASH
 
  &trans      &kp LALT   &kp LCTRL    &kp LGUI  &mt LSHIFT RET    &kp SPACE    &mo NUM_L   &mo HYP_L  &kp LEFT     &kp DOWN      &kp RIGHT
 
@@ -117,6 +118,17 @@ https://github.com/pandrr/blank-slate-zmk-config
 &kp LG(TILDE) &kp HY(A)      &kp HY(S)      &kp HY(R)       &kp HY(T)        &kp HY(G)        &kp HY(M)        &kp HY(N)          &kp HY(E)       &kp HY(I)      &kp HY(O)       &trans
 &trans        &kp HY(Z)      &kp HY(X)      &kp HY(C)       &kp HY(D)        &kp HY(V)        &kp HY(K)        &kp HY(H)          &trans   &trans &kp HY(UP) &trans
 &trans        &trans  &trans  &trans &trans     &kp HY(SPACE)  &trans  &trans  &trans  &trans  &kp HY(LEFT)  &kp HY(DOWN)  &kp HY(RIGHT)
+
+            >;
+        };
+
+        sym2_layer {
+            label = "sym2";
+            bindings = <
+&trans  LS(N1)     LS(N2)     LS(N3)     LS(N4)     LS(N5)     LS(N6)  LS(N7)  LS(N8)  LS(N9)  LS(N0)   &trans
+&trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   &trans
 
             >;
         };
