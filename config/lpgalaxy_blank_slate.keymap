@@ -125,7 +125,7 @@
         sym2_layer {
             label = "sym2";
             bindings = <
-&trans  LS(N1)     LS(N2)     LS(N3)     LS(N4)     LS(N5)     LS(N6)  LS(N7)  LS(N8)  LS(N9)  LS(N0)   &trans
+&trans  &kp LS(N1)     &kp  LS(N2)     &kp LS(N3)     &kp LS(N4)     &kp LS(N5)     &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)   &trans
 &trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   &trans
