@@ -113,10 +113,10 @@ https://github.com/pandrr/blank-slate-zmk-config
         hyp_layer {
             label = "hyp";
             bindings = <
-&trans        &kp Q      &kp W      &kp HY(F)       &kp P        &kp B        &kp J        &kp L          &kp U       &kp Y      &kp SEMI    &trans
-&kp LG(TILDE) &kp A      &kp S      &kp R       &kp T        &kp G        &kp M        &kp N          &kp E       &kp I      &kp O       &trans
-&trans        &kp Z      &kp X      &kp C       &kp D        &kp V        &kp K        &kp H          &kp COMMA   &kp DOT    &kp UP      &trans
-&trans        &trans  &trans  &trans  &kp HY(SPACE)  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&trans        &kp HY(Q)      &kp HY(W)      &kp HY(F)       &kp HY(P)        &kp HY(B)        &kp HY(J)        &kp HY(L)          &kp HY(U)       &kp HY(Y)      &trans   &trans
+&kp LG(TILDE) &kp HY(A)      &kp HY(S)      &kp HY(R)       &kp HY(T)        &kp HY(G)        &kp HY(M)        &kp HY(N)          &kp HY(E)       &kp HY(I)      &kp HY(O)       &trans
+&trans        &kp HY(Z)      &kp HY(X)      &kp HY(C)       &kp HY(D)        &kp HY(V)        &kp HY(K)        &kp HY(H)          &trans   &trans &kp HY(UP) &trans
+&trans        &trans  &trans  &trans &trans     &kp HY(SPACE)  &trans  &trans  &trans  &trans  &kp HY(LEFT)  &kp HY(DOWN)  &kp HY(RIGHT)
 
             >;
         };
