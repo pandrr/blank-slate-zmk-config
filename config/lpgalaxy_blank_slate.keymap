@@ -103,8 +103,8 @@ https://github.com/pandrr/blank-slate-zmk-config
         num_layer {
             label = "Num";
             bindings = <
-&vimCmd   &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans  
-&vimLead  &kp TILDE  &kp LBKT   &kp LBRC   &kp LPAR   &kp PLUS   &kp MINUS  &kp RPAR   &kp RBRC   &kp RBKT   &trans     &trans  
+&trans    &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans  
+&trans    &kp TILDE  &kp LBKT   &kp LBRC   &kp LPAR   &kp PLUS   &kp MINUS  &kp RPAR   &kp RBRC   &kp RBKT   &trans     &trans  
 &trans    &trans     &kp GRAVE  &kp SQT    &kp DQT    &kp EQUAL  &kp UNDER  &kp PIPE   &kp SEMI   &kp COLON  &trans     &kp BSLH
 &trans    &trans     &trans     &trans     &trans     &trans     &mo BT_L   &trans     &trans     &trans     &trans
             >;
