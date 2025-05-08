@@ -75,7 +75,7 @@
  &kp TAB     &kp A      &kp S      &kp R       &kp T        &kp G        &kp M        &kp N          &kp E       &kp I      &kp O       &kp RET
  &trans      &kp Z      &kp X      &kp C       &kp D        &kp V        &kp K        &kp H          &kp COMMA   &kp DOT    &kp SLASH      &trans
 
- &trans      &kp LALT   &kp LCTRL    &kp LGUI  &mt LSHIFT RET    &kp SPACE    &mo NAV_L   &mo NUM_L  &kp HYL_L     &trans      &trans &trans
+ &trans      &kp LALT   &kp LCTRL    &kp LGUI  &mt LSHIFT RET    &kp SPACE    &mo NAV_L   &mo NUM_L  &mo HYL_L     &trans      &trans &trans
 
 
             >;
