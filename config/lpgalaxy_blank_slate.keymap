@@ -19,6 +19,7 @@
 #define NUM_L 2
 #define HYP_L 3
 #define SYM_L 4
+#define NAV_L 5
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
@@ -72,9 +73,9 @@
 
  &kp ESC     &kp Q      &kp W      &kp F       &kp P        &kp B        &kp J        &kp L          &kp U       &kp Y      &kp SEMI    &kp BKSP
  &kp TAB     &kp A      &kp S      &kp R       &kp T        &kp G        &kp M        &kp N          &kp E       &kp I      &kp O       &kp RET
- &trans      &kp Z      &kp X      &kp C       &kp D        &kp V        &kp K        &kp H          &kp COMMA   &kp DOT    &kp UP      &lt SYM_L SLASH
+ &trans      &kp Z      &kp X      &kp C       &kp D        &kp V        &kp K        &kp H          &kp COMMA   &kp DOT    &kp SLASH      &trans
 
- &trans      &kp LALT   &kp LCTRL    &kp LGUI  &mt LSHIFT RET    &kp SPACE    &mo HYP_L   &mo NUM_L  &kp LEFT     &kp DOWN      &kp RIGHT
+ &trans      &kp LALT   &kp LCTRL    &kp LGUI  &mt LSHIFT RET    &kp SPACE    &mo NAV_L   &mo NUM_L  &kp HYL_L     &trans      &trans
 
 
             >;
@@ -104,7 +105,7 @@
         num_layer {
             label = "Num";
             bindings = <
-&trans    &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans  
+&kp N0    &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans  
 &trans    &kp TILDE  &kp LBKT   &kp LBRC   &kp LPAR   &kp MINUS  &kp PLUS   &kp RPAR   &kp RBRC   &kp RBKT   &kp PIPE     &trans  
 &trans    &trans     &kp GRAVE  &kp SQT    &kp DQT    &kp UNDER  &kp EQUAL  &kp COLON  &kp SEMI   &kp DOT    &trans     &kp BSLH
 &trans    &trans     &trans     &trans     &trans     &trans     &mo BT_L   &trans     &trans     &trans     &trans
@@ -129,7 +130,16 @@
 &trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   &trans
+            >;
+        };
 
+        nav_layer {
+            label = "nav";
+            bindings = <
+&trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &kp UP  &trans  &trans   &trans
+&trans  &trans     &trans     &trans     &trans     &trans     &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans   &trans
+&trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   &trans
             >;
         };
 
