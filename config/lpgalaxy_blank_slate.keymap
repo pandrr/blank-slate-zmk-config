@@ -135,10 +135,10 @@
         nav_layer {
             label = "nav";
             bindings = <
-&kp ESC  &trans     &trans     &trans     &trans     &trans    &trans &trans  &kp HOME  &kp UP    &kp END  &trans   
-&trans  &trans     &trans     &trans     &trans     &trans    &trans &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET   
-&trans  &trans     &trans     &trans     &trans     &trans   &trans  &trans  &trans  &trans  &trans  &trans   
-&trans  &trans     &trans     &trans     &trans     &trans    &trans &trans  &trans  &trans  &trans     
+&kp ESC &kp HY(1) &kp HY(2)  &kp HY(3)  &kp HY(4)  &trans  &trans  &kp HY(1) &kp HOME  &kp UP    &kp END  &trans &trans   
+&trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET   
+&trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans   
+&trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans     
             >;
         };
 
