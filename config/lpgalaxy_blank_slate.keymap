@@ -26,6 +26,10 @@
     quick_tap_ms = <150>; 
     flavor = "balanced";
 };
+&mt { 
+    quick_tap_ms = <150>; 
+    flavor = "balanced";
+};
 
 #define BT(n) BT_SEL n
 #define HY(k) LG(LC(LA(LS(k))))  
