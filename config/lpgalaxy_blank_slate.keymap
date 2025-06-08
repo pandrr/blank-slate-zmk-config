@@ -74,9 +74,9 @@
 // &kp TAB     &kp A      &kp S      &kp D       &kp F        &kp G        &kp H        &kp J          &kp K       &kp L      &kp SEMI    &kp RET
 // &kp LSHFT   &kp Z      &kp X      &kp C       &kp V        &kp B        &kp N        &kp M          &kp COMMA   &kp DOT    &kp UP      &kp SLASH
 
-&kp Q      &kp W      &kp F       &kp P        &kp B     &kp LALT &kp LCTL  &kp J        &kp L          &kp U       &kp Y      &kp BKSP
+&kp Q      &kp W      &kp F       &kp P        &mt LALT B     &kp LALT &kp LCTL  &mt LALT  J        &kp L          &kp U       &kp Y      &kp BKSP
 &kp A      &kp S      &kp R       &kp T        &kp G     &trans   &trans    &kp M        &kp N          &kp E       &kp I      &kp O       
-&kp Z      &kp X      &kp C       &kp D        &kp V     &trans   &trans    &kp  K        &kp H          &kp COMMA   &kp DOT    &kp SLASH      
+&kp Z      &kp X      &kp C       &kp D        &mt LCTL V     &trans   &trans    &mt LCTL K        &kp H          &kp COMMA   &kp DOT    &kp SLASH      
 
  &trans      &trans   &trans  &mt LSFT ESC  &mt LGUI RET    &trans   &lt NAV_L SPACE   &lt NUM_L TAB  &trans &trans   &trans &trans
 
@@ -138,7 +138,7 @@
         nav_layer {
             label = "nav";
             bindings = <
-&kp ESC &kp HY(N1) &kp HY(N2)  &kp HY(N3)  &kp HY(N4)  &trans  &trans  &kp HY(N5) &kp HOME  &kp UP    &kp END  &trans  
+&kp ESC &kp HY(N1) &kp HY(N2)  &kp HY(N3)  &kp HY(N4)  &trans  &trans  &kp HY(N5) &kp HOME  &kp UP    &kp END  &kp DEL  
 &trans  &kp HY(LEFT)    &kp HY(SPACE)      &kp HY(RIGHT)   &trans    &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET   
 &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &kp C_PP    &kp C_VOL_DN &kp C_VOL_UP  &trans   
 &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans     
