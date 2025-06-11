@@ -82,7 +82,7 @@
 // &kp TAB     &kp A      &kp S      &kp D       &kp F        &kp G        &kp H        &kp J          &kp K       &kp L      &kp SEMI    &kp RET
 // &kp LSHFT   &kp Z      &kp X      &kp C       &kp V        &kp B        &kp N        &kp M          &kp COMMA   &kp DOT    &kp UP      &kp SLASH
 
-&kp Q      &kp W      &kp F       &kp P        &kp B     &trand &trans  &kp  J        &kp L          &kp U       &kp Y      &kp BKSP
+&kp Q      &kp W      &kp F       &kp P        &kp B     &trans &trans  &kp  J        &kp L          &kp U       &kp Y      &kp BKSP
 &mt LALT A      &mt LCTL S      &mt LSFT R       &mt LGUI T        &kp G     &trans   &trans    &kp M        &mt LGUI N          &mt LSFT E       &mt LCTL I      &mt LALT O       
 &kp Z      &kp X      &kp C       &kp D        &kp V     &trans   &trans    &kp K        &kp H          &kp COMMA   &kp DOT    &kp SLASH      
 
