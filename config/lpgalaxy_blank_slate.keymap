@@ -56,7 +56,17 @@
         combo_CTL {
             timeout-ms = <50>;
             key-positions = <32 33>;
-            bindings = <&kp A>;
+            bindings = <&kp LCTL>;
+        };
+        combo_GUI {
+            timeout-ms = <50>;
+            key-positions = <31 32>;
+            bindings = <&kp LGUI>;
+        };
+        combo_ALT {
+            timeout-ms = <50>;
+            key-positions = <33 34>;
+            bindings = <&kp LALT>;
         };
     };
 
@@ -101,7 +111,7 @@
 &kp A      &kp S      &kp R       &kp T        &kp G     &trans   &trans    &kp M        &kp N   &kp E       &kp I      &kp O       
 &lt BT_L Z      &kp X      &kp C       &mt LCTL D        &mt LALT  V     &trans   &trans    &mt LALT K        &mt LCTL H          &kp COMMA   &kp DOT    &kp SLASH      
 
- &trans      &trans   &trans  &mt LSFT ESC  &mt LGUI RET    &trans   &lt NAV_L SPACE   &lt NUM_L TAB  &trans &trans   &trans &trans
+ &trans      &trans   &trans  &mt LSFT ESC  &mt LGUI RET    &trans   &lt NAV_L SPACE   &lt NUM_L F13  &trans &trans   &trans &trans
 
             >;
         };
