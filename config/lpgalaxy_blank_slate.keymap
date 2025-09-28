@@ -39,6 +39,18 @@
 #define HY(k) LG(LC(LA(LS(k))))  
 
 / {
+
+
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&kp TAB>;
+        };
+    };
+
+
     chosen {
         zmk,physical-layout =
             #ifdef TBLE_DUAL_2U
