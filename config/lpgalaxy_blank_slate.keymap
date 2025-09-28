@@ -1,6 +1,7 @@
 /*
  *
  * TOMS KEYMAP
+
 # https://github.com/pandrr/blank-slate-zmk-config
 
  */
@@ -38,10 +39,6 @@
 #define HY(k) LG(LC(LA(LS(k))))  
 
 / {
-
-
-
-
     chosen {
         zmk,physical-layout =
             #ifdef TBLE_DUAL_2U
@@ -143,7 +140,7 @@
             label = "nav";
             bindings = <
 &kp HY(N0) &kp HY(N1) &kp HY(N2)  &kp HY(N3)  &kp HY(N4)  &trans  &trans  &kp PG_UP &kp HOME  &kp UP    &kp END  &kp DEL  
-&trans  &kp HY(LEFT)    &kp S(TAB)      &kp TAB   &kp F13    &trans  &trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET   
+&trans  &kp HY(LEFT)    &kp HY(SPACE)      &kp HY(RIGHT)   &kp F13    &trans  &trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET   
 &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &kp C_PP    &kp C_VOL_DN &kp C_VOL_UP  &trans   
 &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans     
             >;
