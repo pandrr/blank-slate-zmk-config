@@ -62,7 +62,7 @@
             timeout-ms = <50>;
             key-positions = <31 32>;
             bindings = <&sk LGUI>;
-        };,
+        };
         combo_ALT {
             timeout-ms = <50>;
             key-positions = <33 34>;
@@ -107,11 +107,11 @@
 // &kp TAB     &kp A      &kp S      &kp D       &kp F        &kp G        &kp H        &kp J          &kp K       &kp L      &kp SEMI    &kp RET
 // &kp LSHFT   &kp Z      &kp X      &kp C       &kp V        &kp B        &kp N        &kp M          &kp COMMA   &kp DOT    &kp UP      &kp SLASH
 
-&kp Q      &kp W      &kp F       &kp P        &kp B     &trans &trans  &kp  J        &kp L          &kp U       &kp Y      &kp BKSP
-&kp A      &kp S      &kp R       &kp T        &kp G     &trans   &trans    &kp M        &kp N   &kp E       &kp I      &kp O       
-&lt BT_L Z      &kp X      &kp C       &mt LCTL D        &mt LALT  V     &trans   &trans    &mt LALT K        &mt LCTL H          &kp COMMA   &kp DOT    &kp SLASH      
+&kp Q      &kp W   &kp F    &kp P        &kp B       &trans  &trans  &kp J       &kp L       &kp U       &kp Y      &kp BKSP
+&kp A      &kp S   &kp R    &kp T        &kp G       &trans  &trans  &kp M       &kp N       &kp E       &kp I      &kp O 
+&lt BT_L Z &kp X   &kp C    &mt LCTL D   &mt LALT V  &trans  &trans  &mt LALT K  &mt LCTL H  &kp COMMA   &kp DOT    &kp SLASH      
 
- &trans      &trans   &trans  &mt LSFT ESC  &mt LGUI RET    &trans   &lt NAV_L SPACE   &lt NUM_L F13  &trans &trans   &trans &trans
+&trans      &trans   &trans  &mt LSFT ESC  &mt LGUI RET    &trans   &lt NAV_L SPACE   &lt NUM_L F13  &trans &trans   &trans &trans
 
             >;
         };
