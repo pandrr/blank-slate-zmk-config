@@ -100,10 +100,10 @@
             label = "Base";
             bindings = <
 
-            &lt HYP_L Q  &kp W   &kp F   &kp P         &kp B          &trans   &trans  &kp J       &kp L       &kp U       &kp Y      &kp BKSP
-            &kp A        &kp S   &kp R   &kp T         &kp G          &trans   &trans  &kp M       &kp N       &kp E       &kp I      &kp O 
-            &lt BLT_L Z  &kp X   &kp C   &kp D         &kp V          &trans   &trans  &kp K           &kp H  &kp COMMA   &kp DOT    &kp SLASH      
-            &trans       &trans  &trans  &mt LSFT ESC  &mt LGUI RET   &trans           &lt NAV_L SPACE   &lt NUM_L F13  &trans &trans   &trans &trans
+            &lt HYP_L Q  &kp W   &kp F   &kp P         &kp B          &trans   &trans  &kp J            &kp L       &kp U       &kp Y      &kp BKSP
+            &kp A        &kp S   &kp R   &kp T         &kp G          &trans   &trans  &kp M            &kp N       &kp E       &kp I      &kp O 
+            &lt BLT_L Z  &kp X   &kp C   &kp D         &kp V          &trans   &trans  &kp K            &kp H          &kp COMMA   &kp DOT    &kp SLASH      
+            &trans       &trans  &trans  &mt LSFT ESC  &mt LGUI RET   &trans           &lt NAV_L SPACE  &lt NUM_L F13  &trans &trans   &trans &trans
 
             >;
         };
@@ -112,10 +112,10 @@
             label = "nav";
             bindings = <
 
-            &kp HY(N0) &kp HY(N1) &kp HY(N2)  &kp HY(N3)  &kp HY(N4)  &trans  &trans  &kp PG_UP &kp HOME  &kp UP    &kp END  &kp DEL  
-            &trans  &kp HY(LEFT)    &kp HY(SPACE)      &kp HY(RIGHT)   &kp F13    &trans  &trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET   
-            &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &kp C_PP    &trans &kp C_VOL_UP  &trans   
-            &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans     
+            &trans  &trans   &trans   &trans  &trans   &trans  &trans  &kp PG_UP &kp HOME  &kp UP    &kp END  &kp DEL  
+            &trans  &trans   &trans   &trans  &trans   &trans  &trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET   
+            &trans  &trans   &trans   &trans  &trans   &trans  &trans  &trans  &kp C_PP    &trans &kp C_VOL_UP  &trans   
+            &trans  &trans   &trans   &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans     
 
             >;
         };
@@ -133,7 +133,7 @@
 
             &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &trans  &trans  &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     
             &kp TILDE  &kp LBKT   &kp LBRC   &kp LPAR   &kp MINUS  &trans  &trans  &kp PLUS   &kp RPAR   &kp RBRC   &kp RBKT   &kp PIPE    
-            &trans     &kp GRAVE  &kp SQT    &kp DQT    &kp UNDER  &trans  &trans  &kp EQUAL  &kp COLON  &kp SEMI   &kp DOT    &kp BSLH
+            &trans     &kp GRAVE  &kp SQT    &kp DQT    &kp UNDER  &trans  &trans  &kp EQUAL  &kp COLON  &kp SEMI   &kp S(N8)    &kp BSLH
             &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans     &trans     &trans     &trans     
             >;
         };
