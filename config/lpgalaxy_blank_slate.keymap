@@ -165,15 +165,15 @@
         };
 
 
-#         sym2_layer {
-#             label = "sym2";
-#             bindings = <
-# &trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   &trans
-# &trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   &trans
-# &trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   &trans
-# &trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   
-#             >;
-#         };
+//         sym2_layer {
+//             label = "sym2";
+//             bindings = <
+// &trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   &trans
+// &trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   &trans
+// &trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   &trans
+// &trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans   
+//             >;
+//         };
 
 
 
