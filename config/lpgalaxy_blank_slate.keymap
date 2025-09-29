@@ -100,16 +100,16 @@
             label = "Base";
             bindings = <
 
-            &lt HYP_L Q   &kp W   &kp F    &kp P        &kp B       &trans  &trans  &kp J       &kp L       &kp U       &kp Y      &kp BKSP
-            &kp A        &kp S   &kp R    &kp T        &kp G       &trans  &trans  &kp M       &kp N       &kp E       &kp I      &kp O 
-            &lt BLT_L Z  &kp X   &kp C    &mt LCTL D   &mt LALT V  &trans  &trans  &mt LALT K  &mt LCTL H  &kp COMMA   &kp DOT    &kp SLASH      
-            &trans       &trans   &trans  &mt LSFT ESC  &mt LGUI RET    &trans   &lt NAV_L SPACE   &lt NUM_L F13  &trans &trans   &trans &trans
+            &lt HYP_L Q  &kp W   &kp F   &kp P        &kp B       &trans  &trans  &kp J       &kp L       &kp U       &kp Y      &kp BKSP
+            &kp A        &kp S   &kp R   &kp T        &kp G       &trans  &trans  &kp M       &kp N       &kp E       &kp I      &kp O 
+            &lt BLT_L Z  &kp X   &kp C   &mt LCTL D   &mt LALT V  &trans  &trans  &mt LALT K  &mt LCTL H  &kp COMMA   &kp DOT    &kp SLASH      
+            &trans       &trans  &trans  &mt LSFT ESC  &mt LGUI RET    &trans   &lt NAV_L SPACE   &lt NUM_L F13  &trans &trans   &trans &trans
 
             >;
         };
 
         nav_layer {
-            label = "nav";
+            label = "nuv";
             bindings = <
 
             &kp ESC  &trans  &trans      &trans   &trans  &trans  &trans  &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp DEL  
