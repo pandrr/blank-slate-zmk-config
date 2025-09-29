@@ -75,8 +75,7 @@
             #ifdef TBLE_DUAL_2U
                &layout_ortho_4x12_2x2u;
             #elif defined(TBLE_MIT)
-               &layhttps://imgur.com/a/yUgqEvXout_ortho_4x12_1x2u;
-            
+               &layout_ortho_4x12_1x2u;
             #else
                &layout_ortho_4x12_all1u;
             #endif
