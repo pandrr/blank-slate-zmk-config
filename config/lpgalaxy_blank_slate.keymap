@@ -75,7 +75,8 @@
             #ifdef TBLE_DUAL_2U
                &layout_ortho_4x12_2x2u;
             #elif defined(TBLE_MIT)
-               &layout_ortho_4x12_1x2u;
+               &layhttps://imgur.com/a/yUgqEvXout_ortho_4x12_1x2u;
+            
             #else
                &layout_ortho_4x12_all1u;
             #endif
@@ -112,10 +113,10 @@
             label = "nav";
             bindings = <
 
-            &trans  &trans        &trans     &trans   &trans  &trans  &trans  &kp PG_UP &kp HOME  &kp UP    &kp END  &kp DEL  
-            &trans  &kp HY(LEFT)  &kp S(TAB) &kp TAB   &trans  &trans  &trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET   
-            &trans  &trans        &trans     &trans     &trans    &trans  &trans  &trans  &kp C_PP    &kp C_VOL_DN &kp C_VOL_UP  &trans   
-            &trans  &trans        &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans     
+            &kp ESC  &trans  &trans      &trans   &trans  &trans  &trans  &kp PG_UP  &kp HOME  &kp UP    &kp END  &kp DEL  
+            &trans   &trans  &kp S(TAB)  &kp TAB  &trans  &trans  &trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET   
+            &trans   &trans  &trans      &trans   &trans  &trans  &trans  &trans     &kp C_PP    &kp C_VOL_DN &kp C_VOL_UP  &trans   
+            &trans   &trans  &trans      &trans   &trans  &trans  &trans  &trans     &trans  &trans  &trans     
 
             >;
         };
