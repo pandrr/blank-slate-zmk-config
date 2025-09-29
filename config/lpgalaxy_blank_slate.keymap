@@ -56,17 +56,17 @@
         combo_CTL {
             timeout-ms = <50>;
             key-positions = <32 33>;
-            bindings = <&kp LCTL>;
+            bindings = <&sp LCTL>;
         };
         combo_GUI {
             timeout-ms = <50>;
             key-positions = <31 32>;
-            bindings = <&kp LGUI>;
+            bindings = <&sp LGUI>;
         };
         combo_ALT {
             timeout-ms = <50>;
             key-positions = <33 34>;
-            bindings = <&kp LALT>;
+            bindings = <&sp LALT>;
         };
     };
 
