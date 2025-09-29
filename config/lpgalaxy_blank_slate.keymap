@@ -126,14 +126,15 @@
         //   1   2   3   4   5  XX XX   6   7   8   9   0   
         //   ~   [   {   (   -  XX XX   +   )   }   ]   |   
         //   ??  `   '   "   _  XX XX   =   :   ;   .   \   
+        // 
         num_layer {
             label = "Num";
             bindings = <
 
-            &kp N1     &kp N2     &kp N3     &kp N4     &kp N5    &trans &trans  &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     
-            &kp TILDE  &kp LBKT   &kp LBRC   &kp LPAR   &kp MINUS &trans &trans  &kp PLUS   &kp RPAR   &kp RBRC   &kp RBKT   &kp PIPE    
-            &trans     &kp GRAVE  &kp SQT    &kp DQT    &kp UNDER &trans &trans  &kp EQUAL  &kp COLON  &kp SEMI   &kp DOT    &kp BSLH
-            &trans     &trans     &trans     &trans     &trans    &trans &trans  &mo BT_L   &trans     &trans     &trans     
+            &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &trans  &trans  &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     
+            &kp TILDE  &kp LBKT   &kp LBRC   &kp LPAR   &kp MINUS  &trans  &trans  &kp PLUS   &kp RPAR   &kp RBRC   &kp RBKT   &kp PIPE    
+            &trans     &kp GRAVE  &kp SQT    &kp DQT    &kp UNDER  &trans  &trans  &kp EQUAL  &kp COLON  &kp SEMI   &kp DOT    &kp BSLH
+            &trans     &trans     &trans     &trans     &trans     &trans  &trans  &mo BT_L   &trans     &trans     &trans     
             >;
         };
 
