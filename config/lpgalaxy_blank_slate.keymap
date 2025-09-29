@@ -112,10 +112,10 @@
             label = "nuv";
             bindings = <
 
-            &kp ESC  &trans  &trans      &trans   &trans  &trans  &trans  &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp DEL  
-            &trans   &trans  &kp S(TAB)  &kp TAB  &trans  &trans  &trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET   
-            &trans   &trans  &trans      &trans   &trans  &trans  &trans  &trans     &trans    &trans    &trans     &trans   
-            &trans   &trans  &trans      &trans   &trans  &trans  &trans  &trans     &trans    &trans    &trans        
+            &kp ESC  &trans  &trans      &trans   &trans  &trans  &trans  &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp DEL
+            &trans   &trans  &kp S(TAB)  &kp TAB  &trans  &trans  &trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET
+            &trans   &trans  &trans      &trans   &trans  &trans  &trans  &trans     &trans    &trans    &trans     &trans
+            &trans   &trans  &trans      &trans   &trans  &trans  &trans  &trans     &trans    &trans    &trans
 
             >;
         };
@@ -131,10 +131,11 @@
             label = "Num";
             bindings = <
 
-            &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &trans  &trans  &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     
-            &kp TILDE  &kp LBKT   &kp LBRC   &kp LPAR   &kp MINUS  &trans  &trans  &kp PLUS   &kp RPAR   &kp RBRC   &kp RBKT   &kp PIPE    
+            &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &trans  &trans  &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
+            &kp TILDE  &kp LBKT   &kp LBRC   &kp LPAR   &kp MINUS  &trans  &trans  &kp PLUS   &kp RPAR   &kp RBRC   &kp RBKT   &kp PIPE
             &trans     &kp GRAVE  &kp SQT    &kp DQT    &kp UNDER  &trans  &trans  &kp EQUAL  &kp COLON  &kp SEMI   &kp S(N8)  &kp BSLH
-            &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans     &trans     &trans     &trans     
+            &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans     &trans     &trans     &trans
+
             >;
         };
 
@@ -142,6 +143,7 @@
         hyp_layer {
             label = "hyp";
             bindings = <
+
 &trans    &kp HY(Q)      &kp HY(W)      &kp HY(F)       &kp HY(P)   &kp LG(GRAVE)  &trans  &trans   &trans        &kp HY(L)    &kp HY(SPACE)       &trans      
 &trans    &kp HY(A)      &kp HY(S)      &kp HY(R)       &kp F16     &kp HY(G)      &trans  &trans   &trans        &kp HY(LEFT)   &kp HY(DOWN)     &kp HY(RIGHT)  
 &trans    &kp HY(Z)      &kp HY(X)      &kp HY(C)       &kp HY(D)   &kp HY(V)      &trans  &trans   &trans        &trans      &trans  &trans
@@ -156,6 +158,7 @@
         bt_layer {
             label = "bt";
             bindings = <
+            
 &bt BT(0)  &bt BT(1)  &bt BT(2)  &bt BT(3)  &bt BT(4) &trans   &trans  &trans  &trans  &trans  &trans   &bt BT_CLR
 &kp F1     &kp F2     &kp F3     &kp F4     &kp F5 &trans &trans     &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  
 &trans  &kp F11    &kp F12    &trans     &trans     &trans     &trans  &trans  &trans  &trans  &bootloader   &studio_unlock
