@@ -144,7 +144,7 @@
             bindings = <
 &trans    &kp HY(Q)      &kp HY(W)      &kp HY(F)       &kp HY(P)   &kp LG(GRAVE)  &trans  &trans   &trans        &kp HY(L)    &kp HY(SPACE)       &trans      
 &trans    &kp HY(A)      &kp HY(S)      &kp HY(R)       &kp F16     &kp HY(G)      &trans  &trans   &trans        &kp HY(LEFT)   &kp HY(DOWN)     &kp HY(RIGHT)  
-&trans    &kp HY(Z)      &kp HY(X)      &kp HY(C)       &kp HY(D)   &kp HY(V)      &trans  &trans   &trans        &ktrans      &trans  &trans
+&trans    &kp HY(Z)      &kp HY(X)      &kp HY(C)       &kp HY(D)   &kp HY(V)      &trans  &trans   &trans        &trans      &trans  &trans
 &trans    &trans  &trans  &trans &trans     &kp HY(SPACE)  &trans  &trans   &kp HY(LEFT)  &kp HY(DOWN)  &kp HY(RIGHT)
 
             >;
