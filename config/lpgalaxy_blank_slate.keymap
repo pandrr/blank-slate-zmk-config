@@ -100,7 +100,7 @@
             label = "Base";
             bindings = <
 
-            &lt LUI Q   &kp W   &kp F    &kp P        &kp B       &trans  &trans  &kp J       &kp L       &kp U       &kp Y      &kp BKSP
+            &lt HYP_L Q   &kp W   &kp F    &kp P        &kp B       &trans  &trans  &kp J       &kp L       &kp U       &kp Y      &kp BKSP
             &kp A       &kp S   &kp R    &kp T        &kp G       &trans  &trans  &kp M       &kp N       &kp E       &kp I      &kp O 
             &lt BLT_L Z &kp X   &kp C    &mt LCTL D   &mt LALT V  &trans  &trans  &mt LALT K  &mt LCTL H  &kp COMMA   &kp DOT    &kp SLASH      
             &trans      &trans   &trans  &mt LSFT ESC  &mt LGUI RET    &trans   &lt NAV_L SPACE   &lt NUM_L F13  &trans &trans   &trans &trans
@@ -141,10 +141,10 @@
         hyp_layer {
             label = "hyp";
             bindings = <
-&trans        &kp HY(Q)      &kp HY(W)      &kp HY(F)       &kp HY(P)        &kp HY(B)        &kp HY(J)        &kp HY(L)    &kp UP       &kp HY(Y)      &trans   &trans
-&kp LG(TILDE) &kp HY(A)      &kp HY(S)      &kp HY(R)       &kp F16          &kp HY(G)        &kp HY(M)        &kp HY(LEFT)     &kp DOWN     &kp HY(RIGHT)      &kp HY(O)       &trans
-&trans        &kp HY(Z)      &kp HY(X)      &kp HY(C)       &kp HY(D)        &kp HY(V)        &kp HY(K)        &kp C_PP     &kp C_VOL_DN &kp C_VOL_UP &kp HY(UP) &trans
-&trans        &trans  &trans  &trans &trans     &kp HY(SPACE)  &trans  &trans   &kp HY(LEFT)  &kp HY(DOWN)  &kp HY(RIGHT)
+&trans    &kp HY(Q)      &kp HY(W)      &kp HY(F)       &kp HY(P)        &kp HY(B)        &kp HY(J)        &kp HY(L)    &kp UP       &kp HY(Y)      &trans   &trans
+&trans    &kp HY(A)      &kp HY(S)      &kp HY(R)       &kp F16          &kp HY(G)        &kp HY(M)        &kp HY(LEFT)     &kp DOWN     &kp HY(RIGHT)      &kp HY(O)       &trans
+&trans    &kp HY(Z)      &kp HY(X)      &kp HY(C)       &kp HY(D)        &kp HY(V)        &kp HY(K)        &kp C_PP     &kp C_VOL_DN &kp C_VOL_UP &kp HY(UP) &trans
+&trans    &trans  &trans  &trans &trans     &kp HY(SPACE)  &trans  &trans   &kp HY(LEFT)  &kp HY(DOWN)  &kp HY(RIGHT)
 
             >;
         };    
