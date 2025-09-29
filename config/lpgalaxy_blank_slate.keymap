@@ -100,10 +100,10 @@
             label = "Base";
             bindings = <
 
-            &lt HYP_L Q   &kp W   &kp F    &kp P        &kp B       &trans  &trans  &kp J       &kp L       &kp U       &kp Y      &kp BKSP
-            &kp A       &kp S   &kp R    &kp T        &kp G       &trans  &trans  &kp M       &kp N       &kp E       &kp I      &kp O 
-            &lt BLT_L Z &kp X   &kp C    &mt LCTL D   &mt LALT V  &trans  &trans  &mt LALT K  &mt LCTL H  &kp COMMA   &kp DOT    &kp SLASH      
-            &trans      &trans   &trans  &mt LSFT ESC  &mt LGUI RET    &trans   &lt NAV_L SPACE   &lt NUM_L F13  &trans &trans   &trans &trans
+            &lt HYP_L Q  &kp W   &kp F   &kp P         &kp B          &trans   &trans  &kp J       &kp L       &kp U       &kp Y      &kp BKSP
+            &kp A        &kp S   &kp R   &kp T         &kp G          &trans   &trans  &kp M       &kp N       &kp E       &kp I      &kp O 
+            &lt BLT_L Z  &kp X   &kp C   &kp D         &kp V          &trans   &trans  &kp K           &kp H  &kp COMMA   &kp DOT    &kp SLASH      
+            &trans       &trans  &trans  &mt LSFT ESC  &mt LGUI RET   &trans           &lt NAV_L SPACE   &lt NUM_L F13  &trans &trans   &trans &trans
 
             >;
         };
@@ -114,7 +114,7 @@
 
             &kp HY(N0) &kp HY(N1) &kp HY(N2)  &kp HY(N3)  &kp HY(N4)  &trans  &trans  &kp PG_UP &kp HOME  &kp UP    &kp END  &kp DEL  
             &trans  &kp HY(LEFT)    &kp HY(SPACE)      &kp HY(RIGHT)   &kp F13    &trans  &trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET   
-            &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &kp C_PP    &kp C_VOL_DN &kp C_VOL_UP  &trans   
+            &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &kp C_PP    &trans &kp C_VOL_UP  &trans   
             &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans     
 
             >;
@@ -142,9 +142,9 @@
         hyp_layer {
             label = "hyp";
             bindings = <
-&trans    &kp HY(Q)      &kp HY(W)      &kp HY(F)       &kp HY(P)   &kp LG(GRAVE)  &trans  &trans   &trans        &kp HY(L)    &kp HY(SPACE)       &trans      
-&trans    &kp HY(A)      &kp HY(S)      &kp HY(R)       &kp F16     &kp HY(G)      &trans  &trans   &trans        &kp HY(LEFT)   &kp HY(DOWN)     &kp HY(RIGHT)  
-&trans    &kp HY(Z)      &kp HY(X)      &kp HY(C)       &kp HY(D)   &kp HY(V)      &trans  &trans   &trans        &trans      &trans  &trans
+&trans    &trans      &trans      &trans       &kp HY(P)   &kp LG(GRAVE)  &trans  &trans   &trans        &kp HY(L)    &kp HY(SPACE)       &trans      
+&trans    &trans      &trans      &trans       &kp F16     &kp HY(G)      &trans  &trans   &trans        &kp HY(LEFT)   &kp HY(DOWN)     &kp HY(RIGHT)  
+&trans    &trans      &trans      &trans       &kp HY(D)   &kp HY(V)      &trans  &trans   &trans        &trans      &trans  &trans
 &trans    &trans  &trans  &trans &trans     &kp HY(SPACE)  &trans  &trans   &kp HY(LEFT)  &kp HY(DOWN)  &kp HY(RIGHT)
 
             >;
