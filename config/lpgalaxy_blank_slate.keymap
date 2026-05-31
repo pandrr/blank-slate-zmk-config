@@ -90,10 +90,10 @@
             label = "nav";
             bindings = <
 
-            &trans  &trans   &trans   &trans  &trans   &trans  &trans  &kp PG_UP &kp HOME  &kp UP    &kp END  &kp DEL  
-            &trans  &trans   &kp S(TAB)   &kp TAB  &trans   &trans  &trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET   
-            &trans  &trans   &trans   &kp DEL  &trans   &trans  &trans  &trans  &kp BKSP    &trans &trans  &trans   
-            &trans  &trans   &trans   &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans     &trans
+            &trans  &trans   &trans     &trans   &trans   &trans  &trans  &kp PG_UP  &kp HOME   &kp UP    &kp END    &kp DEL  
+            &trans  &trans   &kp S(TAB) &kp TAB  &trans   &trans  &trans  &kp PG_DN  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET   
+            &trans  &trans   &trans     &kp DEL  &trans   &trans  &trans  &trans     &kp BKSP   &trans    &trans     &trans   
+            &trans  &trans   &trans     &trans   &trans   &trans  &trans  &trans     &trans     &trans    &trans     &trans
 
             >;
         };
