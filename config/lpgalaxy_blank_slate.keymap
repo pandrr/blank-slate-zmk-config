@@ -25,13 +25,13 @@
     quick_tap_ms = <150>; 
     tapping-term-ms = <200>; 
     require-prior-idle-ms = <125>;
-    flavor = "balanced";
+    flavor = "hold-preferred";
 };
 &mt { 
     quick_tap_ms = <150>; 
     tapping-term-ms = <200>; 
     require-prior-idle-ms = <125>;
-    flavor = "balanced";
+    flavor = "hold-preferred";
 };
 
 #define BT(n) BT_SEL n
