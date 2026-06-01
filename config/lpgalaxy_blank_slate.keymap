@@ -129,8 +129,8 @@
         hyp_layer {
             label = "hyp";
             bindings = <
-&trans    &kp LC(LS(TAB))  &trans  &kp LC(TAB)  &kp LG(GRAVE)  &trans  &trans  &trans   &trans         &kp HY(SPACE)   &trans          &trans   
-&trans    &trans           &trans  &trans       &trans         &trans  &trans  &trans   &kp HY(LEFT)   &kp HY(DOWN)    &kp HY(RIGHT)   &trans   
+&trans    &kp LC(LS(TAB))  &kp LA(UP)  &kp LC(TAB)  &kp LG(GRAVE)  &trans  &trans  &trans   &trans         &kp HY(SPACE)   &trans          &trans   
+&trans    &trans           &kp LA(DOWN)  &trans       &trans         &trans  &trans  &trans   &kp HY(LEFT)   &kp HY(DOWN)    &kp HY(RIGHT)   &trans   
 &trans    &trans           &trans  &trans       &kp HY(D)      &trans  &trans  &trans   &trans         &trans          &trans          &trans   
 &trans    &trans           &trans  &trans       &trans         &trans  &trans  &trans   &trans         &trans          &trans     &trans
 
