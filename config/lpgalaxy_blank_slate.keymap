@@ -101,7 +101,7 @@
 
             &trans  &trans   &trans     &trans   &trans   &trans  &trans  &kp PG_UP  &kp HOME   &kp UP    &kp END    &kp DEL  
             &trans  &trans   &kp LS(TAB) &kp TAB  &trans   &trans  &trans  &kp PG_DN  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET   
-            &trans  &trans   &trans     &kp DEL  &trans   &trans  &trans  &trans     &kp BKSP   &kp VOLU    &kp VOLD     &trans   
+            &trans  &trans   &trans     &kp DEL  &trans   &trans  &trans  &trans     &kp BKSP   &kp VOLD    &kp VOLU     &trans   
             &trans  &trans   &trans     &trans   &trans   &trans  &trans  &trans     &trans     &trans    &trans     &trans
 
             >;
