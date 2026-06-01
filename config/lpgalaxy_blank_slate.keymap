@@ -57,7 +57,7 @@
             key-positions = <8 31>;
             bindings = <&sk LG(LALT)>;
         };
-        combo_lgui_lalt {
+        combo_lgui_lsft {
             timeout-ms = <50>;
             key-positions = <8 19>;
             bindings = <&sk LG(LSFT)>;
